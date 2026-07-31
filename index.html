@@ -1,43 +1,169 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy 17th Birthday, Eya 🤍</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Happy 17th Birthday, Eya 🤍</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <div id="loading">
-    <h1>A Little Gift For Eya 🤍</h1>
-    <p>Loading...</p>
+
+<div class="loader"></div>
+
+<h1>A Little Gift For Eya 🤍</h1>
+
+<p>Preparing something special...</p>
+
 </div>
 
-<div id="main" style="display:none;">
+<div id="main">
 
-    <div class="stars"></div>
+<div class="stars"></div>
 
-    <div class="hero">
+<section class="hero">
 
-        <h1>Happy 17th Birthday</h1>
+<h1 class="fade">
+Happy 17th Birthday
+</h1>
 
-        <h2>Eya 🤍</h2>
+<h2 class="fade">
+Eya 🤍
+</h2>
 
-        <p>
-            Selamat datang di hadiah kecil yang kubuat khusus untukmu.
-        </p>
+<p class="fade">
 
-        <button id="giftButton">
-            🎁 Open Your Birthday Gift
-        </button>
+Selamat datang di sebuah hadiah kecil.
 
-    </div>
+Mungkin ini bukan hadiah paling mahal.
+
+Bukan juga hadiah paling mewah.
+
+Tapi setiap detiknya dibuat dengan tulus,
+khusus untuk seseorang yang sedang
+berulang tahun hari ini.
+
+</p>
+
+<button id="giftButton">
+
+🎁 Open Your Birthday Gift
+
+</button>
+
+</section>
+
+<section id="giftSection">
+
+<div class="letterBox">
+
+<h2>
+
+Untuk Eya 🤍
+
+</h2>
+
+<p id="typingText">
+
+</p>
+
+</div>
+
+<div class="gallery">
+
+<img id="slideImage"
+src="images/1.jpg">
+
+</div>
+
+<div class="controls">
+
+<button id="prevPhoto">
+
+←
+
+</button>
+
+<button id="nextPhoto">
+
+→
+
+</button>
+
+</div>
+
+<div class="musicBox">
+
+<button id="playMusic">
+
+🎵 Play Music
+
+</button>
+
+<audio
+id="music"
+loop>
+
+<source
+src="music/sempurna.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+</section>
+
+
+<div class="ending">
+
+<h2>
+Happy Birthday, Eya 🤍
+</h2>
+
+<p>
+
+Terima kasih sudah membuka hadiah kecil ini.
+
+Semoga hari ini dipenuhi tawa,
+kejutan yang indah,
+dan orang-orang yang selalu membuatmu merasa berharga.
+
+Semoga umur ke-17 menjadi awal
+dari banyak hal baik yang akan datang.
+
+Keep smiling.
+
+Always.
+
+🤍
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+Made with 🤍 by Thoriq
+
+</footer>
 
 </div>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
