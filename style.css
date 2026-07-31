@@ -1,4 +1,153 @@
-body{
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(180deg,#081229,#111827,#1d1033);
+    color:white;
+    overflow-x:hidden;
+    min-height:100vh;
+}
+
+#loading{
+    position:fixed;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#081229;
+    z-index:9999;
+    transition:1s;
+}
+
+#loading h1{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+#loading p{
+    opacity:.8;
+    letter-spacing:2px;
+}
+
+#main{
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:25px;
+}
+
+.hero h1{
+    font-size:55px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:38px;
+    color:#ffd6e7;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:650px;
+    line-height:1.8;
+    font-size:18px;
+    color:#ececec;
+    margin-bottom:40px;
+}
+
+#giftButton{
+    border:none;
+    padding:18px 40px;
+    border-radius:50px;
+    background:#ff6ea8;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 0 30px rgba(255,110,168,.45);
+}
+
+#giftButton:hover{
+    transform:scale(1.08);
+    background:#ff4f96;
+}
+
+.stars{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.stars::before,
+.stars::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(#ffd6e7 1px,transparent 1px);
+
+    background-size:
+    120px 120px,
+    180px 180px,
+    250px 250px;
+
+    animation:moveStars 60s linear infinite;
+    opacity:.8;
+}
+
+.stars::after{
+    animation-duration:90s;
+    opacity:.4;
+}
+
+@keyframes moveStars{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-500px);
+    }
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+#giftButton{
+    width:100%;
+    max-width:320px;
+}
+
 }
